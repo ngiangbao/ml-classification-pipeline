@@ -1,0 +1,32 @@
+# Derived from the imports in notebooks/*.ipynb
+# Python 3.12
+
+# --- Core / notebook 01 ---
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+scikit-learn>=1.5
+
+# --- Deep learning / notebook 02 ---
+tensorflow>=2.16          # ships Keras 3, so `from keras...` imports resolve through it
+keras>=3.0
+
+# --- Jupyter ---
+jupyterlab>=4.0
+ipywidgets>=8.1
+
+# ---------------------------------------------------------------------------
+# NOTES
+#
+# * tensorflow bundles Keras 3, so `keras` does not strictly need its own entry;
+#   it is pinned explicitly because the notebooks import from `keras.*` directly
+#   rather than `tensorflow.keras.*`.
+#
+# * GPU: `pip install tensorflow` gives the CPU build on Windows. Notebook 02's
+#   convolutional models were trained on a T4 and will be considerably slower on
+#   CPU. For GPU support see https://www.tensorflow.org/install/pip
+#
+# * Keras 3 ignores the `decay=` argument passed to SGD in notebook 02 and emits
+#   a warning. This is expected. See the note in README.md.
+# ---------------------------------------------------------------------------

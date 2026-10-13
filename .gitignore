@@ -1,0 +1,72 @@
+# ---- Data files (never commit datasets) ----
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.pbix
+*.sas7bdat
+*.sas7bcat
+*.RData
+.RData
+.Rhistory
+
+# ---- Models, weights, large binaries ----
+*.h5
+*.hdf5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.pb
+saved_model/
+*.npy
+*.npz
+
+# ---- Media ----
+*.mp4
+*.MOV
+*.mov
+*.avi
+*.mp3
+*.wav
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---- Training / experiment output ----
+logs/
+runs/
+wandb/
+checkpoint-*/
+.keras/
+
+# ---- Caches ----
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~
+~$*
+*.tmp
